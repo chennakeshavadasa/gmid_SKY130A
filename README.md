@@ -2,7 +2,7 @@
 
 An interactive, browser-based gm/ID characterisation tool for the **SkyWater SKY130** open-source 130nm CMOS PDK.
 
-🔗 **Live demo:** `https://<your-username>.github.io/gmid_SKY130`
+🔗 **Live demo:** [https://chennakeshavadasa.github.io/gmid_SKY130A](https://chennakeshavadasa.github.io/gmid_SKY130A)
 
 ---
 
