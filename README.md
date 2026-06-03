@@ -62,32 +62,6 @@ Derived from simulation data in [chennakeshavadasa/gmid_SKY130](https://github.c
 
 ---
 
-## How to Deploy (GitHub Pages)
-
-```bash
-# Option A — use this as your gmid_SKY130 repo's gh-pages
-git clone https://github.com/<you>/gmid_SKY130
-cd gmid_SKY130
-# copy index.html, README.md, LICENSE, .nojekyll here
-git add index.html .nojekyll LICENSE
-git commit -m "Add interactive gmid explorer"
-git push
-
-# Then: Settings → Pages → main branch → / (root) → Save
-```
-
-```bash
-# Option B — standalone repo
-git init && git add . && git commit -m "Initial deploy"
-git remote add origin https://github.com/<you>/gmid_SKY130
-git push -u origin main
-# Then enable Pages in Settings
-```
-
-Site live at: `https://<you>.github.io/gmid_SKY130`
-
----
-
 ## Data Source
 
 Simulation data: **[chennakeshavadasa/gmid_SKY130](https://github.com/chennakeshavadasa/gmid_SKY130)**  
