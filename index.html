@@ -6,11 +6,12 @@
 <title>SKY130 gm/ID Explorer</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
   :root {
-    --bg: #0d0f14;
-    --surface: #13161f;
-    --surface2: #1c2030;
-    --border: #1f3352;
+    --bg: #0b0e11;
+    --surface: #111518;
+    --surface2: #161c24;
+    --border: #1e2530;
     --accent: #38bdf8;
     --accent2: #818cf8;
     --accent3: #34d399;
@@ -18,14 +19,14 @@
     --red: #f87171;
     --green: #4ade80;
     --sky: #38bdf8;
-    --text: #e2e8f0;
-    --muted: #64748b;
+    --text: #c8d6e5;
+    --muted: #6b7a8d;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'JetBrains Mono','Fira Code','Courier New',monospace; min-height: 100vh; }
+  body { background: var(--bg); color: var(--text); font-family: 'IBM Plex Mono', monospace; min-height: 100vh; }
 
   header { display:flex; align-items:center; gap:14px; padding:13px 26px; background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:200; }
-  .logo { font-size:1.1rem; font-weight:700; letter-spacing:0.05em; color:var(--sky); text-shadow:0 0 20px rgba(56,189,248,0.4); }
+  .logo { font-size:1.1rem; font-weight:700; letter-spacing:0.05em; color:var(--sky);  }
   .logo span { color:var(--accent2); }
   .badge { font-size:0.62rem; padding:2px 8px; background:rgba(56,189,248,0.08); border:1px solid var(--sky); border-radius:2px; color:var(--sky); letter-spacing:0.1em; }
   .header-nav { margin-left:auto; display:flex; gap:4px; }
@@ -126,8 +127,8 @@
   .pill-p { background:rgba(129,140,248,0.15); color:#a5b4fc; }
   .plot-tabs { display:grid; grid-template-columns:1fr 1fr; gap:3px; }
   .tab-btn { padding:5px 6px; border:1px solid var(--border); background:transparent; color:var(--muted); font-family:inherit; font-size:0.61rem; cursor:pointer; border-radius:3px; transition:all 0.15s; text-align:center; }
-  .tab-btn:hover { border-color:var(--accent2); color:var(--accent2); }
-  .tab-btn.active { background:rgba(129,140,248,0.12); border-color:var(--accent2); color:#c7d2fe; }
+  .tab-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .tab-btn.active { background:rgba(56,189,248,0.07); border-color:var(--accent); color:var(--accent); }
   .length-filter { display:flex; flex-wrap:wrap; gap:3px; }
   .len-btn { padding:3px 6px; border:1px solid var(--border); background:transparent; color:var(--muted); font-family:inherit; font-size:0.57rem; cursor:pointer; border-radius:2px; transition:all 0.12s; }
   .len-btn.active { background:rgba(56,189,248,0.1); border-color:var(--sky); color:var(--sky); }
