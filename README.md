@@ -2,18 +2,27 @@
 
 An interactive, browser-based gm/ID characterisation tool for the **SkyWater SKY130** open-source 130nm CMOS PDK.
 
-🔗 **Live demo:** [https://nithinpuru.github.io/gmid/sky130a/](https://nithinpuru.github.io/gmid/sky130a/)
+### 🔗 Website
 
----
+Open the tool in your browser. Copy the URL below:
 
----
-Note: PDK Reference isnt accurate please be careful!!!
+```
+https://nithinpuru.github.io/gmid/sky130a/
+```
+
+All PDKs (SKY130A, GF180MCU-D, IHP SG13G2):
+
+```
+https://nithinpuru.github.io/gmid/
+```
+
+> ⚠️ **Note:** The PDK Reference panel is a summary and may contain inaccuracies. Always check values against the official [SkyWater PDK documentation](https://skywater-pdk.readthedocs.io) before relying on them.
 
 ---
 
 ## What is this?
 
-This tool lets you visually explore the gm/ID characteristics of 7 MOSFET variants in the SKY130 PDK directly in your browser — no Python, no MATLAB, no local install required.
+This tool lets you explore the gm/ID characteristics of 7 MOSFET variants in the SKY130 PDK directly in your browser. You don't need Python, MATLAB or a local install.
 
 Derived from simulation data in [chennakeshavadasa/gmid_SKY130](https://github.com/chennakeshavadasa/gmid_SKY130), converted into a fully interactive Plotly dashboard with a comprehensive PDK reference panel pulled from the official [skywater-pdk documentation](https://skywater-pdk.readthedocs.io).
 
@@ -65,7 +74,7 @@ Derived from simulation data in [chennakeshavadasa/gmid_SKY130](https://github.c
 ## Data Source
 
 Simulation data: **[chennakeshavadasa/gmid_SKY130](https://github.com/chennakeshavadasa/gmid_SKY130)**  
-ngspice DC sweeps across 7 device variants and 11–13 channel lengths each.
+ngspice DC sweeps (Vgs step 0.1 mV, W = 2 µm) across 7 device variants and 11–13 channel lengths each.
 
 PDK documentation: **[skywater-pdk.readthedocs.io](https://skywater-pdk.readthedocs.io)**  
 Apache 2.0 licensed. © SkyWater Technology / Google.
@@ -74,9 +83,10 @@ Apache 2.0 licensed. © SkyWater Technology / Google.
 
 ## Technical Notes
 
-- 300 pts/curve (uniformly downsampled from 8k–42k raw points) — lossless for monotonic gm/ID curves
-- Plotly.js v2.27.0 from CDN — fully self-contained, no backend needed
-- Total file size: ~2.5MB
+- 400 points per curve, uniformly downsampled from 17.5k–49.5k raw points. This is visually lossless for smooth gm/ID curves.
+- Single `index.html` with the data embedded. It loads Plotly.js v2.27.0 from a CDN and needs no backend.
+- Total file size: ~3.5 MB
+- To run it locally, download `index.html` and open it in a browser (internet access is needed for Plotly).
 
 ---
 
@@ -90,7 +100,9 @@ PDK specs: Apache 2.0 © SkyWater Technology / Google
 
 ## Related
 
-- [GF180MCU gm/ID Explorer](https://github.com/chennakeshavadasa/gmid_GF180MCUD) — same tool for GF 180nm MCU PDK
+- [gm/ID Explorer (all PDKs)](https://nithinpuru.github.io/gmid/): SKY130A, GF180MCU-D and IHP SG13G2
+- [GF180MCU gm/ID Explorer](https://github.com/chennakeshavadasa/gmid_GF180MCUD): the same tool for the GF 180nm MCU PDK
+- [gmid_SKY130](https://github.com/chennakeshavadasa/gmid_SKY130): raw simulation data, Xschem testbenches and Python plotting scripts
 
 ---
 
