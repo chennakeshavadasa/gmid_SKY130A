@@ -4,13 +4,17 @@ An interactive, browser-based gm/ID characterisation tool for the **SkyWater SKY
 
 ### 🔗 Website
 
-Open the tool in your browser. Copy the URL below:
+Open the tool in your browser. Click the link, or copy the URL:
+
+👉 **[Open the SKY130A gm/ID Explorer](https://nithinpuru.github.io/gmid/sky130a/)**
 
 ```
 https://nithinpuru.github.io/gmid/sky130a/
 ```
 
 All PDKs (SKY130A, GF180MCU-D, IHP SG13G2):
+
+👉 **[Open the gm/ID Explorer (all PDKs)](https://nithinpuru.github.io/gmid/)**
 
 ```
 https://nithinpuru.github.io/gmid/
