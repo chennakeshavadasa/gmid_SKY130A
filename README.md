@@ -2,11 +2,11 @@
 
 An interactive, browser-based gm/ID characterisation tool for the **SkyWater SKY130** open-source 130nm CMOS PDK.
 
-### 🔗 Website
+## Website
 
 Open the tool in your browser. Click the link, or copy the URL:
 
-👉 **[Open the SKY130A gm/ID Explorer](https://nithinpuru.github.io/gmid/sky130a/)**
+**[Open the SKY130A gm/ID Explorer](https://nithinpuru.github.io/gmid/sky130a/)**
 
 ```
 https://nithinpuru.github.io/gmid/sky130a/
@@ -14,13 +14,13 @@ https://nithinpuru.github.io/gmid/sky130a/
 
 All PDKs (SKY130A, GF180MCU-D, IHP SG13G2):
 
-👉 **[Open the gm/ID Explorer (all PDKs)](https://nithinpuru.github.io/gmid/)**
+**[Open the gm/ID Explorer (all PDKs)](https://nithinpuru.github.io/gmid/)**
 
 ```
 https://nithinpuru.github.io/gmid/
 ```
 
-> ⚠️ **Note:** The PDK Reference panel is a summary and may contain inaccuracies. Always check values against the official [SkyWater PDK documentation](https://skywater-pdk.readthedocs.io) before relying on them.
+> **Note:** The PDK Reference panel is a summary and may contain inaccuracies. Always check values against the official [SkyWater PDK documentation](https://skywater-pdk.readthedocs.io) before relying on them.
 
 ---
 
@@ -34,7 +34,7 @@ Derived from simulation data in [chennakeshavadasa/gmid_SKY130](https://github.c
 
 ## Features
 
-### 📋 PDK Reference Panel
+### PDK Reference Panel
 - Full explanation of all 7 MOSFET variants: LVT / SVT / HVT flavours and HV (5V/10.5V) devices
 - Explanation of what LVT, SVT, HVT actually mean in SKY130 (same gate oxide, different Vt-adjust implants)
 - Why `nfet_01v8_hvt` does NOT exist in SKY130 (only PMOS HVT)
@@ -44,7 +44,7 @@ Derived from simulation data in [chennakeshavadasa/gmid_SKY130](https://github.c
 - Instance parameter limits (Wmin, Lmin) — PMOS Lmin=0.35µm vs NMOS 0.15µm
 - Designer's quick-reference cheatsheet
 
-### 📈 gm/ID Explorer
+### gm/ID Explorer
 - **7 device variants:** NMOS/PMOS SVT/LVT/HVT + HV family
 - **7 interactive Plotly plots:**
   - gm/ID vs Vgs
@@ -110,4 +110,4 @@ PDK specs: Apache 2.0 © SkyWater Technology / Google
 
 ---
 
-*Built for the open-source silicon community. ⭐ the repo if useful.*
+*Built for the open-source silicon community. If you find it useful, please star the repository.*
